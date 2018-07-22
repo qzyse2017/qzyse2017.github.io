@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "share my experience in playong with hyperledger fabric"
+title:  "share my experience in playing with hyperledger fabric"
 date:   2018-07-20 21:26:00 +0800
 categories: daily-posts
 ---
