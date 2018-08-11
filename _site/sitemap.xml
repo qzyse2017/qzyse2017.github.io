@@ -24,9 +24,9 @@
 <loc>http://localhost:4000/comments/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>http://localhost:4000/contents/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/content.html</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 </urlset>

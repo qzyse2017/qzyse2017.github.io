@@ -15,7 +15,11 @@ def isTimeLater(date1,date2):
 def genPostsContent():
     #e.g. 2018-07-03-Use-Tennyson's-verses-to-greet-my-new-blog
     fileList = os.listdir('_posts')
-    newLines = ''
+    newLines = "---\n" + \
+    "layout: page\n" + \
+    "title: cotents\n" + \
+    "permalink: /contents/\n" + \
+    "---\n\n"
     fileList.sort()
     for file in fileList:
         strPieces = file.split('-')
