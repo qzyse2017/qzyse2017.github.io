@@ -25,23 +25,23 @@ def genPostsContent():
         tmpData['last_update'] = time.strftime('%Y-%m-%d', time.localtime())      
         json.dump(tmpData,cfg)
 
+    newLines = ''
+    fileList.sort()
     for file in fileList:
         strPieces = file.split('-')
         
         postTime = strPieces[0] + '-' + strPieces[1] + '-' + strPieces[2]
-        timeLater = isTimeLater('-'.join(strPieces[0:4]),lastUpdateTime)
-        if timeLater == False:
-            continue
 
         titleEnd = file.rfind('.')
         newList = (file[:titleEnd + 1] + 'html').split('-')
         title = ' '.join((file[:titleEnd + 1]).split('-')[3:])
         #e.g. http://qzyse2017.github.io/daily-posts/2018/07/03/Use-Tennyson's-verses-to-greet-my-new-blog.html
-        titleLink = '[' +title + ']' + '(' + 'https://qzyse2017.github.io/daily-posts/' + strPieces[0] + '/' \
+        titleLink = '[' + title + ']' + '(' + 'https://qzyse2017.github.io/daily-posts/' + strPieces[0] + '/' \
                     + strPieces[1]  +'/' + strPieces[2] + '/' +  '-'.join(newList[3:]) + ')'
         newLine = postTime + '  ' + titleLink + '\r\n'
-        f = open('content.md','a')
-        f.write(newLine)
+        newLines += newLine
+    f = open('content.md','w')
+    f.write(newLines)
 
 
 if __name__ == "__main__":
