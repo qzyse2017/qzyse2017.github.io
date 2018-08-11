@@ -15,16 +15,6 @@ def isTimeLater(date1,date2):
 def genPostsContent():
     #e.g. 2018-07-03-Use-Tennyson's-verses-to-greet-my-new-blog
     fileList = os.listdir('_posts')
-    
-    with open('conf.json','r') as cfg:
-        tmpData = json.load(cfg)
-        
-    lastUpdateTime = tmpData['last_update']
-    
-    with open('conf.json','w') as cfg:
-        tmpData['last_update'] = time.strftime('%Y-%m-%d', time.localtime())      
-        json.dump(tmpData,cfg)
-
     newLines = ''
     fileList.sort()
     for file in fileList:
