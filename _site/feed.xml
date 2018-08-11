@@ -1,4 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-22T08:50:43+08:00</updated><id>http://localhost:4000/</id><title type="html">Zyck’s Blog</title><subtitle>&quot;not to pursue what was easy, but to tackle the biggest and hardest problems in computer science.&quot;</subtitle><author><name>Zyck</name></author><entry><title type="html">share my experience in playong with hyperledger fabric</title><link href="http://localhost:4000/daily-posts/2018/07/20/Share-my-experience-in-playing-with-hyperledger-fabric.html" rel="alternate" type="text/html" title="share my experience in playong with hyperledger fabric" /><published>2018-07-20T21:26:00+08:00</published><updated>2018-07-20T21:26:00+08:00</updated><id>http://localhost:4000/daily-posts/2018/07/20/Share-my-experience-in-playing-with-hyperledger-fabric</id><content type="html" xml:base="http://localhost:4000/daily-posts/2018/07/20/Share-my-experience-in-playing-with-hyperledger-fabric.html">&lt;h2 id=&quot;7-14&quot;&gt;7-14&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-11T18:06:18+08:00</updated><id>http://localhost:4000/</id><title type="html">Zyck’s Blog</title><subtitle>&quot;not to pursue what was easy, but to tackle the biggest and hardest problems in computer science.&quot;</subtitle><author><name>Zyck</name></author><entry><title type="html">2018-08-09-Distributed-system-vs-cluster</title><link href="http://localhost:4000/daily-posts/2018/08/09/Distributed-system-vs-cluster.html" rel="alternate" type="text/html" title="2018-08-09-Distributed-system-vs-cluster" /><published>2018-08-09T16:55:09+08:00</published><updated>2018-08-09T16:55:09+08:00</updated><id>http://localhost:4000/daily-posts/2018/08/09/Distributed-system-vs-cluster</id><content type="html" xml:base="http://localhost:4000/daily-posts/2018/08/09/Distributed-system-vs-cluster.html">&lt;p&gt;It seems distributed system and cluster are similar to each other in their functionality and behaviours and I want to find out their main differences.&lt;/p&gt;
+
+&lt;h2 id=&quot;searching-answer-from--computer-architecturea-quantitative&quot;&gt;Searching answer from  &lt;code class=&quot;highlighter-rouge&quot;&gt;Computer Architecture:A Quantitative&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;At first, I did not think they are similar and as a super fan of &lt;code class=&quot;highlighter-rouge&quot;&gt;Computer Architecture:A Quantitative&lt;/code&gt;, I checked the book and want to get some answer, but I did not get a chapter or section which titled &lt;code class=&quot;highlighter-rouge&quot;&gt;distributed system&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;cluster&lt;/code&gt;, but it indeed has a chapter talking about the model which can describe the above two systems which titled &lt;code class=&quot;highlighter-rouge&quot;&gt;Thread-Level parallelism&lt;/code&gt; and it talked about the genesis of the thread-level-parallelism trend at the start of the chapter.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The turning away from the conventional organization came in the middle 1960s, when the law of diminishing returns began to take 
+effect in the effort to increase the operational speed of a computer…. Electronic circuits are ultimately limited in their 
+speed of operation by the speed of light … and many of the circuits were already operating in the nanosecond range.       &lt;br /&gt;
+   W. Jack Bouknight et al. The Illiac IV System (1972)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And the distributed system by its name may be more similar to the &lt;code class=&quot;highlighter-rouge&quot;&gt;distributed shared memory (DSM).&lt;/code&gt; multimultiprocessors.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Existing shared-memory multiprocessors fall into two classes,
+depending on the number of processors involved, which in turn dictates
+a memory organization and interconnect strategy. We refer to the
+multiprocessors by their memory organization because what constitutes
+a small or large number of processors is likely to change over time.
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In the book, the authors talked about clusters and DSM multiprocessors in different chapters because they use different strategies to communicate among threads. DSM multiprocessors use shared address space while clusters use network.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;In both SMP and DSM architectures, 
+communication among threads occurs through a shared address space.
+...
+In contrast, the clusters and warehouse-scale computers of the
+next chapter look like individual computers connected by a network,
+and the memory of one processor cannot be accessed by another
+processor without the assistance of software protocols running on both
+processors. In such designs, message-passing protocols are used to
+communicate data among processors. 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;With complex computer architectures today, I do not think these classifications can be adapted to every condition but IMHO why the discussion in the book matters a lot is that it describes the key problems engineers have to tackle in their daily work.&lt;br /&gt;
+As for clusters and distribued systems(what the authors talked about in his book), the main different problems between these two architectures can be listed below:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Distribued systems mainly need engineers to tackle the problem of multiprocessor cache coherence and the specific coherence requirements varies a lot. The authors gave some common protocols in the book.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;There seems to more problems about network bandwidth and energy consumption in clusters.(the definitions of WSC and clusters are also controversial as discussed in the book)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And the author issued detailed models and gave correspoding data to discussed some possible solutions in practise for these two architectures.&lt;/p&gt;
+
+&lt;h2 id=&quot;answer-from-stackoverflow-and-quara&quot;&gt;Answer from stackoverflow and quara&lt;/h2&gt;
+&lt;p&gt;I listed the REF at the last of this post and the discussion here seems to be somewhat similar to what I listed above.&lt;br /&gt;
+and I think this statements from John Robertson seems to be rather appropriate to end the problem&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;As Avi says below, those terms often mean what a particular user 
+chooses them to mean. They can have a ‘sales’ meaning as well 
+as a strictly technical one
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;discussion from stackoverflow in the link below also talked about similar opinions but the user engineers in these two architectures usually struggle with different problems.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;In general when working with distributed systems you work a lot
+with long latencies and unexpected failures (like mentioned in p2p
+systems). When building a cluster (or a big cluster which can be
+called supercomputer) you try to prevent it by using more robust
+hardware and better network interconnection (InfiniBand) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The main differences when people talking about these two architectures may mainly from the four aspects which is listed by the author of the answer, &lt;code class=&quot;highlighter-rouge&quot;&gt;John Robertson&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.Structure
+2.Scale
+3.Task
+4.Price
+5.Reliability
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Other discussions in the link are also worth reading.&lt;/p&gt;
+
+&lt;h2 id=&quot;ref&quot;&gt;REF:&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.quora.com/What-are-the-differences-between-a-cluster-computer-and-a-distributed-system&quot;&gt;discussion from quara&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://stackoverflow.com/questions/21378427/what-is-the-difference-between-a-distributed-system-and-a-clustered-system&quot;&gt;discussion from stackoverflow&lt;/a&gt;&lt;br /&gt;
+The book &lt;code class=&quot;highlighter-rouge&quot;&gt;Computer Architecture:A Quantitative&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;some-other-trivias&quot;&gt;Some other trivias:&lt;/h2&gt;
+
+&lt;p&gt;Thanks a lot for my teacher Tang and Chen to choose the great book, &lt;code class=&quot;highlighter-rouge&quot;&gt;Computer Architecture:A Quantitative&lt;/code&gt; as our textbook for the course, computer architecture.&lt;br /&gt;
+Not so sure I will choose the course last year, but teacher Tang proudly told us he would be the teacher of another required course and welcomed us to choose his course. He also told us the textbook’s name, having read the book before I chose the course, and really convinced it would be a fascinating course, at last I chose the course.&lt;br /&gt;
+Not feeling so easy to sit with senior schoolmates and very afraid I would fail the exam, it is really not happy to attend the class. However the textbook is really great, not even got to fully understand ten percent of all the fascinating works from the great masters, I indeed get some great ideas while programming from the book.&lt;br /&gt;
+And I found some software engineers programmed just like the models discussed in the book. IMHO It is really a book worth reading for every software engineer, especially the parts &lt;code class=&quot;highlighter-rouge&quot;&gt;The programmer's view&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;fallacies and pitfalls&lt;/code&gt;.&lt;br /&gt;
+Happy to know the two authors(they have been good friends over the years!~) have won Turing Award this year!!!! &lt;code class=&quot;highlighter-rouge&quot;&gt;:)&lt;/code&gt;&lt;/p&gt;</content><author><name>Zyck</name></author><summary type="html">It seems distributed system and cluster are similar to each other in their functionality and behaviours and I want to find out their main differences.</summary></entry><entry><title type="html">share my experience in playing with hyperledger fabric</title><link href="http://localhost:4000/daily-posts/2018/07/20/Share-my-experience-in-playing-with-hyperledger-fabric.html" rel="alternate" type="text/html" title="share my experience in playing with hyperledger fabric" /><published>2018-07-20T21:26:00+08:00</published><updated>2018-07-20T21:26:00+08:00</updated><id>http://localhost:4000/daily-posts/2018/07/20/Share-my-experience-in-playing-with-hyperledger-fabric</id><content type="html" xml:base="http://localhost:4000/daily-posts/2018/07/20/Share-my-experience-in-playing-with-hyperledger-fabric.html">&lt;h2 id=&quot;7-14&quot;&gt;7-14&lt;/h2&gt;
 &lt;p&gt;Saw a &lt;a href=&quot;https://tianchi.aliyun.com/competition/gameList.htm#tab%3DActive%26pageIndex%3D1&quot;&gt;contest about blockchain here&lt;/a&gt; and decided to try it out.&lt;br /&gt;
 The experiences about the work are wrote at the end of this article. Before them I wrote a lot of details just for fun…&lt;/p&gt;
 

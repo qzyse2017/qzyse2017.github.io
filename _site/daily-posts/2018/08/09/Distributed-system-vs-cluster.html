@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>2018-08-09-Distributed-system-vs-cluster | Zyck’s Blog</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="2018-08-09-Distributed-system-vs-cluster" />
+<meta name="author" content="Zyck" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="It seems distributed system and cluster are similar to each other in their functionality and behaviours and I want to find out their main differences." />
+<meta property="og:description" content="It seems distributed system and cluster are similar to each other in their functionality and behaviours and I want to find out their main differences." />
+<link rel="canonical" href="http://localhost:4000/daily-posts/2018/08/09/Distributed-system-vs-cluster.html" />
+<meta property="og:url" content="http://localhost:4000/daily-posts/2018/08/09/Distributed-system-vs-cluster.html" />
+<meta property="og:site_name" content="Zyck’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-08-09T16:55:09+08:00" />
+<script type="application/ld+json">
+{"description":"It seems distributed system and cluster are similar to each other in their functionality and behaviours and I want to find out their main differences.","author":{"@type":"Person","name":"Zyck"},"@type":"BlogPosting","url":"http://localhost:4000/daily-posts/2018/08/09/Distributed-system-vs-cluster.html","headline":"2018-08-09-Distributed-system-vs-cluster","dateModified":"2018-08-09T16:55:09+08:00","datePublished":"2018-08-09T16:55:09+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/daily-posts/2018/08/09/Distributed-system-vs-cluster.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Zyck's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Zyck&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/comments/">comments</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">2018-08-09-Distributed-system-vs-cluster</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-08-09T16:55:09+08:00" itemprop="datePublished">Aug 9, 2018
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>It seems distributed system and cluster are similar to each other in their functionality and behaviours and I want to find out their main differences.</p>
+
+<h2 id="searching-answer-from--computer-architecturea-quantitative">Searching answer from  <code class="highlighter-rouge">Computer Architecture:A Quantitative</code></h2>
+<p>At first, I did not think they are similar and as a super fan of <code class="highlighter-rouge">Computer Architecture:A Quantitative</code>, I checked the book and want to get some answer, but I did not get a chapter or section which titled <code class="highlighter-rouge">distributed system</code> or <code class="highlighter-rouge">cluster</code>, but it indeed has a chapter talking about the model which can describe the above two systems which titled <code class="highlighter-rouge">Thread-Level parallelism</code> and it talked about the genesis of the thread-level-parallelism trend at the start of the chapter.</p>
+
+<blockquote>
+  <p>The turning away from the conventional organization came in the middle 1960s, when the law of diminishing returns began to take 
+effect in the effort to increase the operational speed of a computer…. Electronic circuits are ultimately limited in their 
+speed of operation by the speed of light … and many of the circuits were already operating in the nanosecond range.       <br />
+   W. Jack Bouknight et al. The Illiac IV System (1972)</p>
+</blockquote>
+
+<p>And the distributed system by its name may be more similar to the <code class="highlighter-rouge">distributed shared memory (DSM).</code> multimultiprocessors.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Existing shared-memory multiprocessors fall into two classes,
+depending on the number of processors involved, which in turn dictates
+a memory organization and interconnect strategy. We refer to the
+multiprocessors by their memory organization because what constitutes
+a small or large number of processors is likely to change over time.
+...
+
+</code></pre></div></div>
+
+<p>In the book, the authors talked about clusters and DSM multiprocessors in different chapters because they use different strategies to communicate among threads. DSM multiprocessors use shared address space while clusters use network.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In both SMP and DSM architectures, 
+communication among threads occurs through a shared address space.
+...
+In contrast, the clusters and warehouse-scale computers of the
+next chapter look like individual computers connected by a network,
+and the memory of one processor cannot be accessed by another
+processor without the assistance of software protocols running on both
+processors. In such designs, message-passing protocols are used to
+communicate data among processors. 
+</code></pre></div></div>
+
+<p>With complex computer architectures today, I do not think these classifications can be adapted to every condition but IMHO why the discussion in the book matters a lot is that it describes the key problems engineers have to tackle in their daily work.<br />
+As for clusters and distribued systems(what the authors talked about in his book), the main different problems between these two architectures can be listed below:</p>
+
+<ol>
+  <li>
+    <p>Distribued systems mainly need engineers to tackle the problem of multiprocessor cache coherence and the specific coherence requirements varies a lot. The authors gave some common protocols in the book.</p>
+  </li>
+  <li>
+    <p>There seems to more problems about network bandwidth and energy consumption in clusters.(the definitions of WSC and clusters are also controversial as discussed in the book)</p>
+  </li>
+</ol>
+
+<p>And the author issued detailed models and gave correspoding data to discussed some possible solutions in practise for these two architectures.</p>
+
+<h2 id="answer-from-stackoverflow-and-quara">Answer from stackoverflow and quara</h2>
+<p>I listed the REF at the last of this post and the discussion here seems to be somewhat similar to what I listed above.<br />
+and I think this statements from John Robertson seems to be rather appropriate to end the problem</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>As Avi says below, those terms often mean what a particular user 
+chooses them to mean. They can have a ‘sales’ meaning as well 
+as a strictly technical one
+</code></pre></div></div>
+
+<p>discussion from stackoverflow in the link below also talked about similar opinions but the user engineers in these two architectures usually struggle with different problems.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In general when working with distributed systems you work a lot
+with long latencies and unexpected failures (like mentioned in p2p
+systems). When building a cluster (or a big cluster which can be
+called supercomputer) you try to prevent it by using more robust
+hardware and better network interconnection (InfiniBand) 
+</code></pre></div></div>
+
+<p>The main differences when people talking about these two architectures may mainly from the four aspects which is listed by the author of the answer, <code class="highlighter-rouge">John Robertson</code>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.Structure
+2.Scale
+3.Task
+4.Price
+5.Reliability
+</code></pre></div></div>
+
+<p>Other discussions in the link are also worth reading.</p>
+
+<h2 id="ref">REF:</h2>
+<p><a href="https://www.quora.com/What-are-the-differences-between-a-cluster-computer-and-a-distributed-system">discussion from quara</a><br />
+<a href="https://stackoverflow.com/questions/21378427/what-is-the-difference-between-a-distributed-system-and-a-clustered-system">discussion from stackoverflow</a><br />
+The book <code class="highlighter-rouge">Computer Architecture:A Quantitative</code></p>
+
+<h2 id="some-other-trivias">Some other trivias:</h2>
+
+<p>Thanks a lot for my teacher Tang and Chen to choose the great book, <code class="highlighter-rouge">Computer Architecture:A Quantitative</code> as our textbook for the course, computer architecture.<br />
+Not so sure I will choose the course last year, but teacher Tang proudly told us he would be the teacher of another required course and welcomed us to choose his course. He also told us the textbook’s name, having read the book before I chose the course, and really convinced it would be a fascinating course, at last I chose the course.<br />
+Not feeling so easy to sit with senior schoolmates and very afraid I would fail the exam, it is really not happy to attend the class. However the textbook is really great, not even got to fully understand ten percent of all the fascinating works from the great masters, I indeed get some great ideas while programming from the book.<br />
+And I found some software engineers programmed just like the models discussed in the book. IMHO It is really a book worth reading for every software engineer, especially the parts <code class="highlighter-rouge">The programmer's view</code> and <code class="highlighter-rouge">fallacies and pitfalls</code>.<br />
+Happy to know the two authors(they have been good friends over the years!~) have won Turing Award this year!!!! <code class="highlighter-rouge">:)</code></p>
+
+  </div><a class="u-url" href="/daily-posts/2018/08/09/Distributed-system-vs-cluster.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Zyck&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Zyck</li><li><a class="u-email" href="mailto:2902037215@qq.com">2902037215@qq.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/qzyse2017"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">qzyse2017</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>&quot;not to pursue what was easy, but to tackle the biggest and hardest problems in computer science.&quot;</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
