@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Distributed-system-vs-cluster"
+title:  "Distributed system vs cluster"
 date:   2018-08-09 16:55:09 +0800
 categories: daily-posts
 ---
