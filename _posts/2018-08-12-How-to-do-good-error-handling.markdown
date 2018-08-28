@@ -7,6 +7,10 @@ categories: daily-posts
 
 ## Let it crash~
 
+## Error and Exception
+
+## Error handling in Erlang
+
 ## Error handling in Golang
 
 ## Error handling in NodeJS
@@ -24,12 +28,16 @@ categories: daily-posts
 ## Error handling in Cpp
 
 
-## Some other trivias
-### about KW
-
+## Some other triviass
 ### Joyent and ry
 
 
 ## REF
+
+https://stackoverflow.com/questions/4393197/erlangs-let-it-crash-philosophy-applicable-elsewhere
+
+http://wiki.c2.com/?FailFast
+
 https://www.joyent.com/node-js/production/design/errors
+
 https://davidnix.io/post/error-handling-in-go/
