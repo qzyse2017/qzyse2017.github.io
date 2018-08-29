@@ -13,6 +13,8 @@ categories: daily-posts
 
 ## Error handling in Golang
 
+### new proposal in Golang
+
 ## Error handling in NodeJS
 
 ## Error handling in Java
