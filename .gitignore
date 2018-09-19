@@ -1,8 +1,6 @@
 .sass-cache
 .jekyll-metadata
-.gitgnore
 fast.sh
 _site/fast.sh
 _site/genPosts.py
-
-#for my posts
+_drafts
