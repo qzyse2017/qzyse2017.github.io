@@ -1,7 +1,0 @@
-
-
-## git
-
-## algorithm
-
-## programm implementation
