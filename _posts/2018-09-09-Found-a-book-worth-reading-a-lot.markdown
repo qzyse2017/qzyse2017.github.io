@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Found a book worth reading a lot"
-date:   2018-08-09 11:26:00 +0800
+date:   2018-09-09 11:26:00 +0800
 categories: daily-posts
 ---
 
