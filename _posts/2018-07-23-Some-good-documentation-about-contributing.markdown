@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Some good documentation about contributing"
+title:  "Some good documentation about open source contributing"
 date:   2018-08-14 09:57:38 +0800
 categories: daily-posts
 ---
