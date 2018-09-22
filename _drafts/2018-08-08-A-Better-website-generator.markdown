@@ -1,3 +1,0 @@
-
-
-hugo and jekyll
