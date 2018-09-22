@@ -27,7 +27,7 @@ Hoping I can share more experience with taking something awesome from this book 
 
 Here, another time, reminded me what my OOP teacher He, has taught us in class, "When we interviewed students who were going to apply for master's degrees, we asked them what is the first step you should do when writing a new software，they answered what they learned from software engineering course, just like, analyse the demands, draw UML graphs, etc. But I think they should search some possible solutions done by previous persons, learned whether the solution is good enough and whether it can be improved."
 
-I also observed similar actions from senior schoolmates KW, he is rather skilled in finding good solution and applying their work to is own. Orz. Really learned a lot from him.
+I also observed similar actions from my senior schoolmate KW, he is rather skilled in finding good solution and applying their work to his own. Orz. Really learned a lot from him.
 
 
 REF
