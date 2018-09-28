@@ -22,7 +22,7 @@ def genPostsContent():
     "---\n\n"
     fileList.sort()
     for file in fileList:
-        if os.path.isfile(file):
+        if os.path.isfile(os.path.join('_posts',file)):
             strPieces = file.split('-')
             
             postTime = strPieces[0] + '-' + strPieces[1] + '-' + strPieces[2]
