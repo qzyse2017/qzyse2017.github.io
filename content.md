@@ -11,4 +11,6 @@ permalink: /contents/
 2018-08-07  [How does RedHat get profit.](https://qzyse2017.github.io/daily-posts/2018/08/07/How-does-RedHat-get-profit.html)
 2018-08-09  [Distributed system versus cluster.](https://qzyse2017.github.io/daily-posts/2018/08/09/Distributed-system-versus-cluster.html)
 2018-08-14  [Some good documentation about contributing.](https://qzyse2017.github.io/daily-posts/2018/08/14/Some-good-documentation-about-contributing.html)
+2018-09-02  [How to make good issue.](https://qzyse2017.github.io/daily-posts/2018/09/02/How-to-make-good-issue.html)
 2018-09-09  [Found a book worth reading a lot.](https://qzyse2017.github.io/daily-posts/2018/09/09/Found-a-book-worth-reading-a-lot.html)
+2018-09-14  [Haskell compiler on FPGA.](https://qzyse2017.github.io/daily-posts/2018/09/14/Haskell-compiler-on-FPGA.html)
