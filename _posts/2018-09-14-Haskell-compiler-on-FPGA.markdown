@@ -75,6 +75,23 @@ Some of them may not very at good at teaching from my perspective(or I just coul
 
 Really apprecicate that I have met these teachers and learned a lot from them!
 
+====
+
+Renew:
+
+2018-10-03 20:24:46
+Saw some other interesting application of Haskell from ["Real world Haskell"](http://book.realworldhaskell.org/read/why-functional-programming-why-haskell.html)
+
+>ASIC and FPGA design software (Lava, products from Bluespec Inc.) 
+
+>Music composition software (Haskore)
+
+>Compilers and compiler-related tools (most notably GHC)
+
+>Distributed revision control (Darcs)
+
+>Web middleware (HAppS, products from Galois Inc.)
+
 
 REF
 
