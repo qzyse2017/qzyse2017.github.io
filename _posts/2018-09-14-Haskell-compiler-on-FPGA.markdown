@@ -25,9 +25,9 @@ Results from bing.
 
 
 ## clash
-Its github repository: https://github.com/clash-lang/clash-compiler
+Its github repository: [clash-lang/clash-compiler](https://github.com/clash-lang/clash-compiler)
 
-Homepage: https://www.clash-lang.org/
+Homepage: [clash-lang homepage](https://www.clash-lang.org/)
 
 It is in fact a functional hardware description language(it describe the hardware directly) but its semantics and syntax is similar to Haskell... emm.. why not write verilog directly... I do not think it is a good solution, it may be welcome only to those who had learned Haskell and start to hardware description language recently...
 
@@ -42,7 +42,7 @@ Higher-order functions, with type inference, result in designs that are fully pa
 
 Seems point 2, 3 could be features that surpass classic hardware description languge, have not designed any complex systems myself, and not know about the fourth point.
 
-A simple tutorials http://hackage.haskell.org/package/clash-prelude-0.99.3/docs/Clash-Tutorial.html#g:4
+A simple tutorials [clash-tutorial](http://hackage.haskell.org/package/clash-prelude-0.99.3/docs/Clash-Tutorial.html#g:4)
 
 rather similar to Haskell in programming mode and syntax, but this abstraction could also be done in verilog, the number of code lines is decreased a lot(logic which may need a lot of lines of code to describe in verilog or VHDL can just be showed with very few lines here!!!) and much dirty work is covered, seems really greater than just use verilog, systemVerilog...
 
@@ -53,15 +53,15 @@ May try programming with clash and FPGA myself, if sometimes in the future I wil
 Using it to implement some encryption and decryption algorithms seems a good idea! Emmm...have recently also read some news that some people are using ASIC to mine digital coins(ASIC will consume less energy). First, using clash to design a algorithm-specified circuit on FPGA and make it into ASIC?
 
 ## Some other similer work
-http://www.dougandjean.com/hngn.html The author tried it just about 10 years ago about his version seems simple.
+[www.dougandjean.com/hngn.html](http://www.dougandjean.com/hngn.html) The author tried it just about 10 years ago, but his version seems simple.
 
-http://catherineh.github.io/programming/2016/12/26/haskell-on-a-xilinx-fpga This blog author tried to let clash work on Xilinx FPGA and introduced his work in detail.
+[haskell-on-a-xilinx-fpga](http://catherineh.github.io/programming/2016/12/26/haskell-on-a-xilinx-fpga) This blog author tried to let clash work on Xilinx FPGA and introduced his work in detail.
 
 Seems no person has tried to compile Haskell directly to executable program on FPGA, and I have just thinked of that it is not a good a idea, since there is a valid specification for Verilog, VHDL, and systemVerilog, but the executeble program for various FPGA can vary a lot...
 
 Above all, Haskell is really a fascinating language but there seems to be very few people learning it now. In fact, it is very stable, you do not need to adapt yourself to many various new syntax and there are many very smart persons who are supporting this language to grow healthy. Every little change added is considered and debated a lot, and there are many successful usecases in commercial, its community is also very friendly. I guess maybe many people are just thinking it is harder to learn than other language, and you could not write a runnable program until you have learned a lot of it, however, if I start to learn golang or python now, it may just take me a few hours to get the most key points of the language, and I can write a runnable language in a short time. 
 
-Also, it take a lot of time to compile a Haskell language, but in fact, its runtime performance is rather good, a related test results can be seen here, http://greenlab.di.uminho.pt/wp-content/uploads/2017/10/sleFinal.pdf, (C, C++, and Rust are all system-level languages `:)`, Haskell may not do as good as them in performance, but you just need to write much fewer lines of code if you choose Haskell!)
+Also, it take a lot of time to compile a Haskell language, but in fact, its runtime performance is rather good, a related test results can be seen here, [sleFinal.pdf](http://greenlab.di.uminho.pt/wp-content/uploads/2017/10/sleFinal.pdf), (C, C++, and Rust are all system-level languages `:)`, Haskell may not do as good as them in performance, but you just need to write much fewer lines of code if you choose Haskell!)
 
 ## Some other trivias:
 
@@ -95,15 +95,15 @@ Saw some other interesting application of Haskell from ["Real world Haskell"](ht
 
 REF
 
-https://www.clash-lang.org/
+[https://www.clash-lang.org/](https://www.clash-lang.org/)
 
-http://cufp.org/2012/peter-braam-parallel-scientific-awesome-haskell-fp.html
+[http://cufp.org/2012/peter-braam-parallel-scientific-awesome-haskell-fp.html](http://cufp.org/2012/peter-braam-parallel-scientific-awesome-haskell-fp.html)
 
-http://www.dougandjean.com/hngn.html
+[http://cufp.org/2012/peter-braam-parallel-scientific-awesome-haskell-fp.html](http://www.dougandjean.com/hngn.html)
 
-http://hackage.haskell.org/package/clash-prelude-0.99.3/docs/Clash-Tutorial.html
+[http://hackage.haskell.org/package/clash-prelude-0.99.3/docs/Clash-Tutorial.html](http://hackage.haskell.org/package/clash-prelude-0.99.3/docs/Clash-Tutorial.html)
 
-https://news.8btc.com/gpu-mining-prospectus-equihash-is-no-match-for-ram-assisted-asics
+[https://news.8btc.com/gpu-mining-prospectus-equihash-is-no-match-for-ram-assisted-asics](https://news.8btc.com/gpu-mining-prospectus-equihash-is-no-match-for-ram-assisted-asics)
 
 
 
