@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Haksell compiler on FPGA"
+title:  "Haskell compiler on FPGA"
 date:   2018-09-14 14:27:05 +0800
 categories: daily-posts
 ---
