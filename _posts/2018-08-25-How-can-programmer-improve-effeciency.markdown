@@ -15,7 +15,7 @@ Define the standard of improving effeciency here first. In my opinion, it should
 
 Why this standard, I will show its value in the discussion below.
 
-1. manage your energy instead of your time
+## manage your energy instead of your time
 
 I thought time is the key of effeciency, however, easy work A and hard work B may take your 2 hours equally, but after finish the two work, you may feel very differently, and after doing the hard work, you may just feel you can not continue to do similar work and have to take a longer break, thus, you are missing some more working hours this day.
 
@@ -27,22 +27,22 @@ I spent horrible hours -- 16 hours a day in my senior high school and I never ad
 
 If you employers pay you a lot higher than your peer and you think it is equal to the energy you devote every day, just skip it. 
 
-2. do the hardest work at the start of your work
+## do the hardest work at the start of your work
 
 The same reason for the last one, just like running in a one-kilometer contest, you may keep runing fast for a little while at first and become slow when you are near the finish line, but if you start with a slow speed, you will also get tired and may just run slower in the second procedure.
 
 Start your work with the hard parts and after you have done it, you will still have some energy to do the rest, or you will find that you just want to leave the hard part tomorrow because it just seems so big a task.
 
-3. move to another environment when feel tired
+## move to another environment when feel tired
 
 This is just my experience and I am not sure it will work for others.
 
 When you feel tired and get stuck in some problems, you may move to another environment, say, go to wash your face and get a tin of Coca Cola. And do not go back to sit before your computer too quickly, shut down your computer and try to solve the problems just with your paper and pens make also work. You may feel fresh again.
 
-4. Use proper tools
+## Use proper tools
 Good tools will save your time and prevent you from doing redundant work many times every day.
 
-5. spend some time to gain more abilities
+## spend some time to gain more abilities
 
 Use "abilities" not simply "knowledge" or "technologies" here. Technology and knowledge may change fast however, some kernel concepts, rules and abilities you used to guide your work do not, recommend a programmer, Robert C. Martin here, you may read hs books and blogs, and he talked a lot about those seldom change but will make you qualified to finish your work over years. Also, go to here some sugestions from those who are "old" in programming.
 
@@ -52,44 +52,44 @@ For example, you may try to refactor or rewrite your code and you will find it t
 
 Learning how to write good test code and deployment strategies also save time for you.
 
-6. Make some goals to encourage you finish the work
+## Make some goals to encourage you finish the work
 I finish all my homework very quickly when I was youny for girl lived next to me promised to go out to play with me after finishing homework. I even helped write her homework for her(not a good habit...though, should have avoided it...). These little goals will motivate you a lot.
 
 Key points: you work be divided into smaller parts and some small encouragements after every small goal is reached.
 
 
-7. Set up deadlines
+## Set up deadlines
 Deadlines may also motivate you and make you overcome great difficulties in a short time, energy consume may not decrease here though.
 
-8. keep workspace clean
+## keep workspace clean
 Clean workspace and less interrupt from others can both keep you concentrated on your work more easily and thus, cost your less energy.
 
 Clean redundant files from your computer reguarly.
 
-9. Avoid behaviours that cost your energy greatly
+## Avoid behaviours that cost your energy greatly
 May vary among different people, for me, it is avoid strong emotion caused by others and avoid backhanded talk with others, these two behaviours will both cost me a lot of energy for I am not good at understanding meanings implied by others and understand what they are thinking from their expressions, I avoid to observe their expressions actually. Also, strong emotion(becoming very happy and great anger) costs my energy enormously.
 
 To some others, they may be doing repeated but high-concentration needed work, doing exercise and driving from home for long distance...
 
-10. do the more profitable service
+## do the more profitable service
 If you really need money, and you do not have to provide a lot every month, I recommend that you think some other ways to make money.
 
 Programmers provide their work to their employers and the companies provide goods(service) to its customers. The value of your work does not solely depend on your ability/ the hours you spend, it may also depend on the business you are gaining profits from, you can transfer to another business(say, you may refer to Jane street Inc)
 
 There are many other ways you can get profit, you may do some investment, I have heard some people tried using neural network to predicate the trends of stock market(focus on some specific elements) and made a lot of money from it. 
 
-11. spend more time on plan of your work before start
+## spend more time on plan of your work before start
 
 Good plans(may contain talking with your customer and going to experience their demands yourself) may cost your less time in change your code in the future, and make your code easy to add new functionalities in the future.
 
-12. shift between diferent tasks regularly
+## shift between diferent tasks regularly
 May keep more fresh...
 
-13. calculate which parts spend most of our time and which parts can be optimize regularly
+## calculate which parts spend most of our time and which parts can be optimize regularly
 
 Like profiling your program...
 
-14. Make detailed todo-list
+## Make detailed todo-list
 
 Some other useful sugestions from discussion on quara, see the link in REF part
 
