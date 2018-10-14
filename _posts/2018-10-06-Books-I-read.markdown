@@ -79,7 +79,7 @@ A little shame that I read it only to pass the exam...
 ### Just for Fun:the Story of an Accidental Revolutionary
 From Linus Torvalds, he talked his early life with Linux. A little surprised that there is acutually someone who has similar habits like me... like wearing sandals and socks together in summer(well, this could be it is both a little cool in northern areas...) and staying alone in dark places🙄... 
 
-Back to the topic, the most valuable in this book could be that you can know a lot about the development of Linux and many thoughts of Linux himself in maintaining this porject, will make you think a lot ang think deeply about software and business...and maybe your life. And I have to admit, Linus is really a fun person...😂
+Back to the topic, the most valuable in this book could be that you can know a lot about the development of Linux and many thoughts of Linus himself in maintaining this porject, will make you think a lot ang think deeply about software and business...and maybe your life. And I have to admit, Linus is really a fun person...😂
 
 ### Operating Systems:internals and Design Principles,eighth Edition
 My teacher use it as textbook so I read it. Will give you a overall perspective about main problems(and corresponding models) in operating system and give common solution to you, eighth eidtion added some new descriptions for modern technologies and provides their comparisons in different aspects.
@@ -175,11 +175,11 @@ You may getan overall view of scientific computing from this book.
 
 My father bought it when he saw this book in the bookstore, really a big surprise for me(he sent it to me later)!!! Loving all kinds of books related to maths~❤❤❤🤣 Its Chinese name, means: ```Fun mathematics-tangram, Chinese Ring Puzzle and Klotski: three great classic puzzles in China```.
 
-The book make models for some problems you may(all just the maths lovers may) think of while playing these toys and do some rigorous analysis to get an answer(not too much, but you can learn the spirits a mathematician has if you aim to be one).
+The book make models for some problems you may(or just the maths lovers may) think of while playing these toys and do some rigorous analysis to get an answer(not too much, but you can learn the spirits a mathematician has if you aim to be one).
 
 Just read it for entertainment and you may also get some deeper understanding of these toys if you are a lover of them.
 
-Girl sat next behind to me in primary school, my friend, XJ, also bought this book later and we often communicate on some fun problems while reading, while, the problems were mainly from another book from the same series, 数学聊斋(it means ). It may seem more useful for whom want to use mathsmatics to solve daily problems, knowledge used here just easy, i believe if you are a programmer, you will not feel hard to read it.
+Girl sat next behind to me in primary school, my friend, XJ, also bought this book later and we often communicate on some fun problems while reading, while, the problems were mainly from another book from the same series, 数学聊斋(it means Ghost stories of Maths). It may seem more useful for whom want to use mathsmatics to solve daily problems, knowledge used here just easy, i believe if you are a programmer, you will not feel hard to read it.
 
 The last article in this book impressed me a lot and I can still remember the author's teacing for those aim at maths, "You have to be detatched to common benefits appearing in your work and life, to gain some achievemants, you should not do it with your desire of money and fame, it will drive you away from persisting on your reasearches heart and soul and getting pure pleasure from maths itself".
 
@@ -231,7 +231,7 @@ bought a lot, but have not completed reading them 😭
 ## Some other books which may inspire you as a programmer but not related to your work closely
 
 ### The Zen programmer
-Came across this book in school library while searching for another book, its name is just tempting, zen, seems words from Buddhism, and why it is related to programmers, and next time, when I saw the repository once forked by my friend KW, I just really want to laugh...😂, I fork the repository myself, just for fun and a faith(actually I do not believe there could be no bugs in my programs😂)...
+Came across this book in school library while searching for another book, its name is just tempting, zen, seems words from Buddhism, and why it is related to programmers, and next time, when I saw [the repository](https://github.com/yesvods/nocode) once forked by my friend KW, I just really want to laugh...😂, I fork the repository myself, just for fun and a faith(actually I do not believe there could be no bugs in my programs😂)...
 
 Really, programmers and engineers are facing too much pressure every day and the author's experience seems just more tough contrast with those who have majored in related subjects of computer science, the author learned it in his twenties if my memory is right... and he faced many pressures in his daily work, both in days he worked with others in enterprises and in days he started working as a freelance.
 
@@ -240,7 +240,7 @@ Theories talked in this book may seem a little funny to whom believe science fir
 May have a try to read it, for those who only want to buy very useful books it may not be a good choice for you.
 
 ### Hackers and Painters Big Ideas from the Computer Age
-Read it in 2016 summer holiday, really excited while reading for I found most of the author's views are so analogous to mine. And the author loves painting!!! He even majored in painting in his university(I also had dreamed of it...)
+Read it in 2016 summer holiday, really excited while reading for I found most of the author's views are so analogous to mine. And the author loves painting!!! He even majored in painting in his university(I had also dreamed of it...)
 
 For those who only want to buy very useful books it may not be a good choice for you.
 
