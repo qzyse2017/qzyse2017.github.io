@@ -18,3 +18,4 @@ permalink: /contents/
 2018-09-09  [Found a book worth reading a lot.](https://qzyse2017.github.io/daily-posts/2018/09/09/Found-a-book-worth-reading-a-lot.html)
 2018-09-14  [Haskell compiler on FPGA.](https://qzyse2017.github.io/daily-posts/2018/09/14/Haskell-compiler-on-FPGA.html)
 2018-10-06  [Books I read.](https://qzyse2017.github.io/daily-posts/2018/10/06/Books-I-read.html)
+2018-10-13  [Common ways to implement FSM.](https://qzyse2017.github.io/daily-posts/2018/10/13/Common-ways-to-implement-FSM.html)
