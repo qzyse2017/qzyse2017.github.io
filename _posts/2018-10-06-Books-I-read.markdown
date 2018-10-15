@@ -179,7 +179,7 @@ The book make models for some problems you may(or just the maths lovers may) thi
 
 Just read it for entertainment and you may also get some deeper understanding of these toys if you are a lover of them.
 
-Girl sat next behind to me in primary school, my friend, XJ, also bought this book later and we often communicate on some fun problems while reading, while, the problems were mainly from another book from the same series, 数学聊斋(it means Ghost stories of Maths). It may seem more useful for whom want to use mathsmatics to solve daily problems, knowledge used here just easy, i believe if you are a programmer, you will not feel hard to read it.
+Girl sat next behind to me in primary middle school, my friend, XJ, also bought this book later and we often communicate on some fun problems while reading, while, the problems were mainly from another book from the same series, 数学聊斋(it means Ghost stories of Maths). It may seem more useful for whom want to use mathsmatics to solve daily problems, knowledge used here just easy, i believe if you are a programmer, you will not feel hard to read it.
 
 The last article in this book impressed me a lot and I can still remember the author's teacing for those aim at maths, "You have to be detatched to common benefits appearing in your work and life, to gain some achievemants, you should not do it with your desire of money and fame, it will drive you away from persisting on your reasearches heart and soul and getting pure pleasure from maths itself".
 
