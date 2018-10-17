@@ -32,7 +32,7 @@ Here some other conventions you may use in your project to guide your users.
 
 2. Define some tags
 
-3. Use some conventional words and use some robots to make automate some procedure(while it seems a bit hard...)
+3. Use some conventional words and use some robots to automate some procedure(while it seems a bit hard...)
 Not aware of the specific steps required myself, and I guess you may use GitHub api to achivie the goals, and you may refer to [this page](https://developer.github.com/).
 
 And [examples](https://github.com/kubernetes/test-infra/blob/master/robots/) from kubernetes may also help.
