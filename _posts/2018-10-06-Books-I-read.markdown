@@ -206,6 +206,16 @@ Two books I found in my father old book shelves... read it on the the october ho
 
 Talked about how to solve a lot of fun problems the author may encouter in his daily life(The author lived about a century ago... and you know...😂...) May have a try to read it if you are maths lover.
 
+### Debugging : The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems
+I should say that most cases talked in this book are about hardware and they are really fun(I felt so lucky that I do not need to solve so many tricky problems, `:-)  `), but you may not get a lot of detailed experience from it if you mainly work on software. But the 9 rules talked here work for software, too. And you may learn to apply them to your work.
+
+The 9 rules are [here](http://debuggingrules.com/), and you may save the corresponding [poster](http://www.debuggingrules.com/debuggingrules.jpg) and read them regularly to help yourself get more familiar in solving bugs.
+
+In fact, there are many books about debugging on amazon, and it seems that most of them are worth reading according to comments from customers. Mastering the techniques of using debugger also helps solve problems faster. Hoping to read some books on it in the future.
+
+### Building Maintainable Software
+The paper copy is thin, but the rules talked are really useful and heuristic, especially for those like me who do not master many techniques in optimizing code. There are many code examples in the book helping you learn the rules better.
+
 ## Some books going to read in the future
 
 bought a lot, but have not completed reading them 😭
