@@ -22,7 +22,7 @@ description: '"not to pursue what was easy, but to tackle the biggest and hardes
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  qzyse2017
-twitter_username: yzhfs3129(simply encrypted,may hack it)
+twitter_username: zyck2019
 
 # Build settings
 markdown: kramdown
